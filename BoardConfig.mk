@@ -227,4 +227,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/sony/pdx206/BoardConfigVendor.mk
+include vendor/sony/pdx206/BoardConfigVendor.mk
