@@ -55,4 +55,4 @@ odm                                                     /odm                   e
 /devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*   /storage/usbotg        vfat    nosuid,nodev                                         wait,voldmanaged=usbotg:auto
 
 # ZRAM
-/dev/block/zram0                                        none                   swap    defaults                                             zramsize=536870912
+/dev/block/zram0                                        none                   swap    defaults                                             zramsize=536870912,max_comp_streams=8
