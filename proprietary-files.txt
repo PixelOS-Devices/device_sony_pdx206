@@ -1479,7 +1479,6 @@ vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/mlid
-vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/seccomp_policy/gnss@2.0-base.policy
@@ -1517,7 +1516,6 @@ vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libminksocket.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqdma_file_agent.so
-vendor/lib64/libslimclient.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_server_protocol.so
 vendor/lib64/libxtwifi_server_protocol_uri_v3.so

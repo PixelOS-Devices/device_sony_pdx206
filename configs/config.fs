@@ -76,12 +76,6 @@ user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE
 
-[system/vendor/bin/slim_daemon]
-mode: 0755
-user: AID_GPS
-group: AID_GPS
-caps: NET_BIND_SERVICE
-
 [system/vendor/bin/wcnss_filter]
 mode: 0755
 user: AID_BLUETOOTH
@@ -152,12 +146,6 @@ caps: NET_BIND_SERVICE
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
-caps: NET_BIND_SERVICE
-
-[vendor/bin/slim_daemon]
-mode: 0755
-user: AID_GPS
-group: AID_GPS
 caps: NET_BIND_SERVICE
 
 [vendor/bin/wcnss_filter]
