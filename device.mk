@@ -197,7 +197,6 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmutils \
     libtinyxml \
-    libvulkan \
     memtrack.kona \
     vendor.display.config@1.11.vendor \
     vendor.display.config@2.0 \
@@ -482,10 +481,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
-
-# Vendor libstdc++
-PRODUCT_PACKAGES += \
-    libstdc++_vendor
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
