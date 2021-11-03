@@ -105,9 +105,6 @@ on post-fs
     # SONY: Start shell script
     exec_start sony_sh
 
-    # Update dm-verity state and set partition.*.verified properties
-    verity_update_state
-
     # Display
     chown system system /sys/devices/dsi_panel_driver/hbm_mode
     chown system system /sys/devices/dsi_panel_driver/flm2_mode
