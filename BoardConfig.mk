@@ -78,7 +78,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 TARGET_KERNEL_SOURCE := kernel/sony/sm8250
-TARGET_KERNEL_CONFIG := pdx206_defconfig
+TARGET_KERNEL_CONFIG := pdx206_defconfig vendor/debugfs.config
 
 # Use External DTC
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
