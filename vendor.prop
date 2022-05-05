@@ -236,9 +236,6 @@ persist.vendor.radio.enableadvancedscan=true
 persist.vendor.sensors.sync_request=true
 persist.vendor.sensors.allow_non_default_discovery=true
 
-# Shutdown
-sys.vendor.shutdown.waittime=500
-
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
