@@ -138,8 +138,7 @@ TARGET_KERNEL_CONFIG := pdx206_defconfig vendor/debugfs.config
 # Use External DTC
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc \
-    DTC_OVERLAY_TEST_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/ufdt_apply_overlay \
-    LLVM=1 LLVM_IAS=1
+    DTC_OVERLAY_TEST_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/ufdt_apply_overlay
 
 # Libinit
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_pdx206
