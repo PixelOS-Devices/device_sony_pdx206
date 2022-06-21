@@ -135,10 +135,6 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/sony/sm8250
 TARGET_KERNEL_CONFIG := pdx206_defconfig vendor/debugfs.config
 
-# Use External DTC
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
-
 # Libinit
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_pdx206
 
