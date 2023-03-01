@@ -311,6 +311,9 @@ on boot
     # start fingerprint HAL service
     start ets_hal
 
+    # Enable smart charging, for charging control to work
+    write /sys/class/power_supply/battery_ext/smart_charging_activation 1
+
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -B -z \
         -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
@@ -366,16 +369,6 @@ on property:sys.boot_completed=1
 on property:sys.shutdown.requested=*
     write /sys/class/power_supply/battery/bootup_shutdown_phase 4
     write /sys/class/power_supply/battery/uevent change
-
-# Set value in property to sysfs for SmartCharge
-on property:persist.vendor.battery.smt_chg=activate
-    write /sys/class/power_supply/battery_ext/smart_charging_activation 1
-
-on property:persist.vendor.battery.smt_chg=charging_suspend
-    write /sys/class/power_supply/battery_ext/smart_charging_interruption 1
-
-on property:persist.vendor.battery.smt_chg=charging_resume
-    write /sys/class/power_supply/battery_ext/smart_charging_interruption 0
 
 # Touch
 on property:vendor.smartstamina.touchreport=1

@@ -312,11 +312,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/bus/pci/drivers/wil6210* 0000:01:00.0/net/wigig0/gro_flush_timeout 0660 system system
 /sys/devices/virtual/net/bond0 queues/rx-0/rps_cpus 0660 system system
 
-#nfc permissions
-#/dev/nfc-nci              0660    nfc         nfc
-#/dev/nq-nci               0660    nfc         nfc
-#/dev/assd                 0660    nfc         nfc
-
 # NFC
 /dev/pn553                 0660    nfc         nfc
 
@@ -478,9 +473,11 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   scan_elements/in_anglvel_z_index 0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   scan_elements/in_anglvel_z_type  0664    system  system
 
-
 # standard iio temp attributes
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   in_temp_offset                  0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   in_temp_raw                     0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   in_temp_scale                   0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   in_temp_scale_available         0664    system  system
+
+# Charger
+/sys/class/power_supply/battery_ext  smart_charging_interruption  0660  system  system
