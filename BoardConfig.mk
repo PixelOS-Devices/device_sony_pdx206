@@ -146,6 +146,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC_OVERLAY_TEST_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/ufdt_apply_overlay \
     LLVM=1 LLVM_IAS=1
 
+# Libinit
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_pdx206
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 

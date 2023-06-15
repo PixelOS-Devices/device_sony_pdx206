@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 Paranoid Android
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <string-array name="config_skuSupportsSecureNfc">
+        <item>pdx206</item>
+    </string-array>
+
+</resources>

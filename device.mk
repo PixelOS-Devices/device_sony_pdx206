@@ -385,6 +385,7 @@ PRODUCT_PACKAGES += \
     AOSPSettingsResTarget \
     CarrierConfigResTarget \
     FrameworksResTarget \
+    NfcResTarget \
     SettingsProviderResTarget \
     SettingsResTarget \
     SystemUIResTarget \
