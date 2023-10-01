@@ -35,13 +35,13 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon \
-    SonyEdoFrameworksResCommon \
-    SonyEdoSettingsProviderOverlayCommon \
-    SonyEdoSettingsResCommon \
-    SonyEdoSystemUIResCommon \
-    SonyEdoTelephonyResCommon \
-    WifiResCommon
+    CarrierConfigResTarget \
+    FrameworksResTarget \
+    SettingsProviderResTarget \
+    SettingsResTarget \
+    SystemUIResTarget \
+    TelephonyResTarget \
+    WifiResTarget
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -534,7 +534,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
 

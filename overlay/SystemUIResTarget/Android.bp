@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SonyEdoSettingsResCommon",
+    name: "SystemUIResTarget",
     device_specific: true,
 }

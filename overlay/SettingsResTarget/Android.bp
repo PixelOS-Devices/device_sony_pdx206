@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SonyEdoFrameworksResCommon",
+    name: "SettingsResTarget",
     device_specific: true,
 }

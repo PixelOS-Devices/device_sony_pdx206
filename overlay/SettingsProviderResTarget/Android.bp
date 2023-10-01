@@ -4,6 +4,7 @@
 //
 
 runtime_resource_overlay {
-    name: "SonyEdoTelephonyResCommon",
-    product_specific: true,
+    name: "SettingsProviderResTarget",
+    device_specific: true,
 }
+
