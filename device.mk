@@ -459,9 +459,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge
 
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/sony
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Shim
 PRODUCT_PACKAGES += \
