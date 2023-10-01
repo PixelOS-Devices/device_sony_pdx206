@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "Ad1tyaS1ngh/kernel_sony_sm8250",
+    "target_path": "kernel/sony/sm8250",
+    "branch": "T",
+    "remote": "github"
+  },
+  {
+    "repository" : "Ad1tyaS1ngh/vendor_sony_pdx206",
+    "target_path": "vendor/sony/pdx206",
+    "branch": "T",
+    "remote": "github"
+  }
+]
