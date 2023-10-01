@@ -1,4 +1,4 @@
-
+#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -127,7 +127,6 @@ AUDIO_FEATURE_ENABLED_HDMI_EDID := true
 AUDIO_FEATURE_ENABLED_HDMI_PASSTHROUGH := true
 AUDIO_FEATURE_ENABLED_DISPLAY_PORT := true
 AUDIO_FEATURE_ENABLED_USB_BURST_MODE := true
-USE_XML_AUDIO_POLICY_CONF := 1
 
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 
