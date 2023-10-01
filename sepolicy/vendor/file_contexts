@@ -20,7 +20,7 @@
 
 
 # HALs
-/(vendor|system/vendor|odm|vendor/odm)/bin/hw/android\.hardware\.lights-service\.sony_edo                   u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor|odm|vendor/odm)/bin/hw/android\.hardware\.lights-service\.pdx206                     u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.semc\.hardware\.display@(.*)?                         u:object_r:hal_disp_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.somc\.hardware\.miscta@1\.0-service                   u:object_r:hal_miscta_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.semc\.hardware\.secd@1\.1-service                     u:object_r:hal_secd_default_exec:s0

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.lights-service.sony_edo"
+#define LOG_TAG "android.hardware.lights-service.pdx206"
 
 #include "Lights.h"
 
