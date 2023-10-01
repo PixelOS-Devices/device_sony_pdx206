@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR := sony
-
 DEVICE_PATH := device/sony/pdx206
 
 # A/B
