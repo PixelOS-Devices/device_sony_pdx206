@@ -19,9 +19,6 @@ on post-fs
     setprop persist.radio.multisim.config ${vendor.radio.multisim.config}
     setprop ro.vendor.ltalabel.model ${vendor.radio.ltalabel.model}
 
-on property:ro.vendor.ltalabel.model=XQ-AT42
-    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
-
 on property:ro.vendor.ltalabel.model=XQ-AS42
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
 

@@ -101,6 +101,7 @@ vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
+bluetooth.device.default_name=Xperia 5 II
 bluetooth.hardware.power.idle_cur_ma=6
 bluetooth.hardware.power.operating_voltage_mv=3700
 bluetooth.hardware.power.rx_cur_ma=28
@@ -248,8 +249,11 @@ ro.com.android.dataroaming=true
 persist.vendor.sensors.sync_request=true
 persist.vendor.sensors.allow_non_default_discovery=true
 
-# shutdown
+# Shutdown
 sys.vendor.shutdown.waittime=500
+
+# Touch
+ro.vendor.display.low_touch_rate=false
 
 # USB
 vendor.usb.diag.func.name=diag

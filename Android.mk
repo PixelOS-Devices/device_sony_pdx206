@@ -16,7 +16,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter pdx203 pdx206,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),pdx206)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
