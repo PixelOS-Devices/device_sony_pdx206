@@ -33,8 +33,6 @@ vendor.audio.tunnel.encode=false
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.track.enable=true
 vendor.audio.offload.multiaac.enable=true
-vendor.audio.dolby.ds2.enabled=false
-vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.offload.multiple.enabled=false
 vendor.audio.offload.passthrough=false
 vendor.audio.offload.gapless.enabled=true
@@ -200,9 +198,6 @@ ro.hardware.keystore_desede=true
 # Media
 debug.stagefright.omx_default_rank=0
 debug.stagefright.ccodec=1
-
-# NFC
-ro.camera.notify_nfc=1
 
 # PASR
 vendor.power.pasr.enabled=true
