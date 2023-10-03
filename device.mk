@@ -186,10 +186,6 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libqdMetaData \
-    libtinyxml \
-    libvulkan \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
@@ -201,6 +197,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libsdmcore \
     libsdmutils \
+    libtinyxml \
+    libvulkan \
     memtrack.kona \
     vendor.display.config@1.11.vendor \
     vendor.display.config@2.0 \
@@ -408,9 +406,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     libprotobuf-cpp-full \
-    librmnetctl \
-    extphonelib \
-    extphonelib.xml
+    librmnetctl
 
 # Sensors
 PRODUCT_PACKAGES += \

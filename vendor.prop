@@ -93,7 +93,6 @@ vendor.audio.feature.wsa.enable=false
 vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.snd_mon.enable=true
 vendor.audio.enable.cirrus.speaker=true
-persist.vendor.audio.fluence.speaker=true
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
