@@ -9,8 +9,8 @@ case "$model" in
         setprop vendor.radio.multisim.config ss;;
 esac
 
-if [ "$model" == "" ]; then
-    setprop vendor.radio.ltalabel.model "unknown"
-else
-    setprop vendor.radio.ltalabel.model "$model"
-fi
+# NFC
+case "$model" in
+    "XQ-AS42" )
+        setprop persist.vendor.nfc.config_file_name libnfc-nxp-typef.conf;;
+esac
