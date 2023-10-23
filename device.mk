@@ -164,8 +164,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     texfat.rc \
     init.nfc.rc \
-    init.sony-device-common.rc \
-    init.sony-platform.rc \
     init.sony.rc \
     init.sony.sh
 
