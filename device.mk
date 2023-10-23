@@ -146,7 +146,6 @@ PRODUCT_PACKAGES += \
     init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
-    init.qcom.msim.sh \
     init.qcom.factory.rc \
     init.qcom.post_boot.sh \
     init.qcom.rc \
@@ -167,7 +166,8 @@ PRODUCT_PACKAGES += \
     init.nfc.rc \
     init.sony-device-common.rc \
     init.sony-platform.rc \
-    init.sony.rc
+    init.sony.rc \
+    init.sony.sh
 
 # Configstore
 PRODUCT_PACKAGES += \
