@@ -8,6 +8,12 @@
 -->
 <resources>
 
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MANUFACTURER $2=MODEL-->
+    <string translatable="false" name="def_device_name">Sony Xperia 5 II</string>
+
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
+    <string translatable="false" name="def_device_name_simple">Xperia 5 II</string>
+
     <!-- Set the automatic brightness mode on by default -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
 
