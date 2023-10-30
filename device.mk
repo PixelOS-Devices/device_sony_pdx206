@@ -484,7 +484,7 @@ PRODUCT_COPY_FILES += \
 
 # Vendor libstdc++
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++_vendor
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
