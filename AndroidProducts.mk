@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_pdx206.mk
+    $(LOCAL_DIR)/aosp_pdx206.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_pdx206-user \
-    awaken_pdx206-userdebug \
-    awaken_pdx206-eng
+    aosp_pdx206-user \
+    aosp_pdx206-userdebug \
+    aosp_pdx206-eng
