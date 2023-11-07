@@ -12,42 +12,21 @@
     <hal format="hidl">
         <name>android.hardware.authsecret</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAuthSecret</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@1.0::IAuthSecret/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@2.1::IBiometricsFingerprint/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBluetoothHci</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@1.0::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
-        <version>2.6</version>
-        <interface>
-            <name>ICameraProvider</name>
-            <instance>external/0</instance>
-            <instance>internal/0</instance>
-        </interface>
         <fqname>@2.6::ICameraProvider/external/0</fqname>
         <fqname>@2.6::ICameraProvider/internal/0</fqname>
     </hal>
@@ -60,11 +39,6 @@
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGatekeeper</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
     <hal format="hidl">
@@ -156,11 +130,6 @@
     <hal format="hidl">
         <name>vendor.egistec.hardware.fingerprint</name>
         <transport>hwbinder</transport>
-        <version>4.0</version>
-        <interface>
-            <name>IBiometricsFingerprintRbs</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@4.0::IBiometricsFingerprintRbs/default</fqname>
     </hal>
     <hal format="hidl">
@@ -386,11 +355,6 @@
     <hal format="hidl">
         <name>vendor.qti.qspmhal</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQspmhal</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@1.0::IQspmhal/default</fqname>
     </hal>
     <hal format="hidl">
