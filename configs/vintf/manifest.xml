@@ -90,11 +90,6 @@
         <name>android.hardware.secure_element</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ISecureElement/SIM1</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.2::ISecureElement/SIM1</fqname>
         <fqname>@1.2::ISecureElement/SIM2</fqname>
     </hal>
     <hal format="hidl">
@@ -176,10 +171,6 @@
         <name>vendor.qti.hardware.btconfigstore</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IBTConfigStore/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.btconfigstore</name>
-        <transport>hwbinder</transport>
         <fqname>@2.0::IBTConfigStore/default</fqname>
     </hal>
     <hal format="hidl">
@@ -279,10 +270,6 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IQtiRadio/slot1</fqname>
         <fqname>@1.0::IQtiRadio/slot2</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.radio.qtiradio</name>
-        <transport>hwbinder</transport>
         <fqname>@2.4::IQtiRadio/slot1</fqname>
         <fqname>@2.4::IQtiRadio/slot2</fqname>
     </hal>
