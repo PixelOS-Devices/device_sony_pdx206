@@ -20,7 +20,6 @@ vendor.fingerprint.hwid                 u:object_r:vendor_fingerprint_hwid_prop:
 
 # Misc
 vendor.demo.                            u:object_r:demo_prop:s0
-persist.vendor.somc.cust.               u:object_r:cust_system_prop:s0
 
 # NFC
 persist.vendor.nfc.config_file_name    u:object_r:vendor_nfc_prop:s0
