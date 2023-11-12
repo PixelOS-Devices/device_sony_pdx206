@@ -77,7 +77,7 @@ vendor/lib/libsonydseehxwrapper.so
 vendor/lib64/libhdmipassthru.so
 vendor/lib64/libsonydseehxwrapper.so
 
-# Audio Firmware
+# Audio
 system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
 system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/libacdb-fts.so
@@ -98,24 +98,17 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 
+# Audio Firmware
+vendor/firmware/L-cs35l41-dsp1-spk-cali.bin
+vendor/firmware/L-cs35l41-dsp1-spk-prot.bin
+vendor/firmware/R-cs35l41-dsp1-spk-cali.bin
+vendor/firmware/R-cs35l41-dsp1-spk-prot.bin
+vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
+vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
+
 # Audio FX Modules
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
-vendor/etc/zoom_noise_reduction/znr_44k_ComboCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_FrontCHICam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_NoCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_SWideCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_TeleCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_WideCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_defaultCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_ComboCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_FrontCHICam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_NoCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_SWideCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_TeleCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_WideCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_defaultCam.tbl
-vendor/etc/zoom_noise_reduction/znr_parameter.xml
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdnnrwrapper.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -163,6 +156,23 @@ vendor/lib64/libsony3daudioeffect.so
 vendor/lib64/libvpt3d.so
 vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 
+# Audio Sony Effect
+vendor/etc/zoom_noise_reduction/znr_44k_ComboCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_FrontCHICam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_NoCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_SWideCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_TeleCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_WideCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_defaultCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_ComboCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_FrontCHICam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_NoCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_SWideCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_TeleCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_WideCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_defaultCam.tbl
+vendor/etc/zoom_noise_reduction/znr_parameter.xml
+
 # Authsecret
 vendor/bin/hw/android.hardware.authsecret@1.0-service-qti
 vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc
@@ -176,6 +186,7 @@ vendor/lib/libbtnv.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
+vendor/lib64/libsoc_helper.so
 
 # Bluetooth (A2DP)
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
@@ -200,9 +211,6 @@ vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
-
-# Bluetooth (Other libs)
-vendor/lib64/libsoc_helper.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -1472,9 +1480,18 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
-# Fingerprint firmware
+# Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc
+vendor/firmware/egista.b00
+vendor/firmware/egista.b01
+vendor/firmware/egista.b02
+vendor/firmware/egista.b03
+vendor/firmware/egista.b04
+vendor/firmware/egista.b05
+vendor/firmware/egista.b06
+vendor/firmware/egista.b07
+vendor/firmware/egista.mdt
 vendor/lib64/libRbsFlow.so
 vendor/lib64/libets_teeclient_v2.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
@@ -1530,6 +1547,18 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
 # Graphics (Adreno firmware)
+vendor/firmware/a615_zap.b00
+vendor/firmware/a615_zap.b01
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a619_gmu.bin
+vendor/firmware/a620_zap.b00
+vendor/firmware/a620_zap.b01
+vendor/firmware/a620_zap.b02
+vendor/firmware/a620_zap.elf
+vendor/firmware/a620_zap.mdt
+vendor/firmware/a630_sqe.fw
 vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
 vendor/firmware/a650_zap.b00
@@ -1800,6 +1829,10 @@ vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libstagefright_hdcp.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 
+# Modem
+vendor/bin/mlog_qmi_service
+vendor/etc/init/mlog_qmi_service.rc
+
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
@@ -1815,7 +1848,6 @@ vendor/lib64/unnhal-acc-hvx.so
 
 # NFC Firmware
 vendor/lib64/libpn557_fw.so
-
 
 # OMX
 vendor/lib/libAlacSwDec.so
@@ -2086,7 +2118,7 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
 system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib/vendor.qti.data.slm@1.0.so
 
-# Secd
+# SECD
 lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.0.so
 lib64/vendor.somc.hardware.miscta@1.0.so:vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
@@ -2112,6 +2144,15 @@ vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 vendor/lib64/vendor.somc.hardware.security.secd@1.1.so
 
 # SECD firmware
+vendor/firmware/tzsecuredata.b00
+vendor/firmware/tzsecuredata.b01
+vendor/firmware/tzsecuredata.b02
+vendor/firmware/tzsecuredata.b03
+vendor/firmware/tzsecuredata.b04
+vendor/firmware/tzsecuredata.b05
+vendor/firmware/tzsecuredata.b06
+vendor/firmware/tzsecuredata.b07
+vendor/firmware/tzsecuredata.mdt
 vendor/firmware/tzsuntory.b00
 vendor/firmware/tzsuntory.b01
 vendor/firmware/tzsuntory.b02
@@ -2130,6 +2171,10 @@ vendor/firmware/tztpm.b05
 vendor/firmware/tztpm.b06
 vendor/firmware/tztpm.b07
 vendor/firmware/tztpm.mdt
+
+# SIM control
+odm/bin/sony_ext_uim_ctrl
+odm/etc/init/sony_ext_uim_ctrl.rc
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
@@ -2348,7 +2393,6 @@ vendor/lib64/vendor.semc.hardware.thermal@1.0.so
 # Touchscreen firmware
 vendor/firmware/touch_module_id_0x94.img
 
-# Trusted Execution Environment connector
 # Trusted User Interface
 system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so
 system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so
@@ -2356,6 +2400,32 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
+# VPP
+vendor/bin/vppservice
+vendor/etc/init/vppservice.rc
+vendor/lib/libpfter.so
+vendor/lib/libswiqisettinghelper.so
+vendor/lib/libvppclient.so
+vendor/lib/libvpphcp.so
+vendor/lib/libvpphvx.so
+vendor/lib/libvpplibrary.so
+vendor/lib/vendor.qti.hardware.vpp@1.1.so
+vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib/vendor.qti.hardware.vpp@1.3.so
+vendor/lib/vendor.somc.hardware.swiqi@1.0-impl.so
+vendor/lib/vendor.somc.hardware.swiqi@1.0.so
+vendor/lib64/libpfter.so
+vendor/lib64/libswiqisettinghelper.so
+vendor/lib64/libvppclient.so
+vendor/lib64/libvpphcp.so
+vendor/lib64/libvpphvx.so
+vendor/lib64/libvpplibrary.so
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so
+vendor/lib64/vendor.qti.hardware.vpp@1.3.so
+vendor/lib64/vendor.somc.hardware.swiqi@1.0-impl.so
+vendor/lib64/vendor.somc.hardware.swiqi@1.0.so
 
 # Widevine DRM
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
@@ -2404,6 +2474,18 @@ vendor/firmware/tzwvcpybuf.b05
 vendor/firmware/tzwvcpybuf.b06
 vendor/firmware/tzwvcpybuf.b07
 vendor/firmware/tzwvcpybuf.mdt
+
+# Wifi
+vendor/bin/cnss-daemon
+vendor/etc/wifi/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/bdwlan.e16
+vendor/etc/wifi/bdwlan.e17
+vendor/etc/wifi/bdwlan.elf
+vendor/etc/wifi/icm.conf
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/regdb.bin
+vendor/etc/wifi/wifi_txpower.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # WiFi Display (system) - from OnePlus 8 Pro (IN2025_11.F.15)
 system/framework/WfdCommon.jar|da807ef11346e38e3d9058e655b3a565f3e2a32d
@@ -2481,89 +2563,3 @@ vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 vendor/lib64/libmmrtpdecoder_proprietary.so
 vendor/lib64/libmmrtpencoder_proprietary.so
-
-# Wifi firmware
-vendor/bin/cnss-daemon
-vendor/etc/wifi/bdwlan.e16
-vendor/etc/wifi/bdwlan.e17
-vendor/etc/wifi/bdwlan.elf
-
-# Other maybe needed firmware
-vendor/firmware/L-cs35l41-dsp1-spk-cali.bin
-vendor/firmware/L-cs35l41-dsp1-spk-prot.bin
-vendor/firmware/R-cs35l41-dsp1-spk-cali.bin
-vendor/firmware/R-cs35l41-dsp1-spk-prot.bin
-vendor/firmware/a615_zap.b00
-vendor/firmware/a615_zap.b01
-vendor/firmware/a615_zap.b02
-vendor/firmware/a615_zap.elf
-vendor/firmware/a615_zap.mdt
-vendor/firmware/a619_gmu.bin
-vendor/firmware/a620_zap.b00
-vendor/firmware/a620_zap.b01
-vendor/firmware/a620_zap.b02
-vendor/firmware/a620_zap.elf
-vendor/firmware/a620_zap.mdt
-vendor/firmware/a630_sqe.fw
-vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
-vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
-vendor/firmware/egista.b00
-vendor/firmware/egista.b01
-vendor/firmware/egista.b02
-vendor/firmware/egista.b03
-vendor/firmware/egista.b04
-vendor/firmware/egista.b05
-vendor/firmware/egista.b06
-vendor/firmware/egista.b07
-vendor/firmware/egista.mdt
-vendor/firmware/tzsecuredata.b00
-vendor/firmware/tzsecuredata.b01
-vendor/firmware/tzsecuredata.b02
-vendor/firmware/tzsecuredata.b03
-vendor/firmware/tzsecuredata.b04
-vendor/firmware/tzsecuredata.b05
-vendor/firmware/tzsecuredata.b06
-vendor/firmware/tzsecuredata.b07
-vendor/firmware/tzsecuredata.mdt
-
-# VPP
-vendor/bin/vppservice
-vendor/etc/init/vppservice.rc
-vendor/lib/libpfter.so
-vendor/lib/libswiqisettinghelper.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpphcp.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/vendor.qti.hardware.vpp@1.3.so
-vendor/lib/vendor.somc.hardware.swiqi@1.0-impl.so
-vendor/lib/vendor.somc.hardware.swiqi@1.0.so
-vendor/lib64/libpfter.so
-vendor/lib64/libswiqisettinghelper.so
-vendor/lib64/libvppclient.so
-vendor/lib64/libvpphcp.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
-vendor/lib64/vendor.somc.hardware.swiqi@1.0-impl.so
-vendor/lib64/vendor.somc.hardware.swiqi@1.0.so
-
-# Modem
-vendor/bin/mlog_qmi_service
-vendor/etc/init/mlog_qmi_service.rc
-
-# WLAN
-vendor/etc/wifi/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/icm.conf
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/regdb.bin
-vendor/etc/wifi/wifi_txpower.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
-
-# SIM control
-odm/bin/sony_ext_uim_ctrl
-odm/etc/init/sony_ext_uim_ctrl.rc
