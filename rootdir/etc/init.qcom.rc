@@ -31,12 +31,12 @@ import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.qcom.factory.rc
 
 on early-init
-  # create symlink for vendor mount points
+    # create symlink for vendor mount points
     symlink /vendor/firmware_mnt /firmware
     symlink /vendor/bt_firmware /bt_firmware
     symlink /vendor/dsp /dsp
 
-  # Change ownership of sysfs power control node
+    # Change ownership of sysfs power control node
     chown system graphics /sys/class/drm/card0/device/power/control
 
     #Disable UFS clock scaling
@@ -58,13 +58,16 @@ on init
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
+
     # Allow subsystem (modem etc) debugging
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1
     write /sys/devices/virtual/npu/msm_npu/boot 1
     write /sys/devices/virtual/cvp/cvp/boot 1
+
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.can.sh
+
     setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
     chown system system /mnt/vendor/persist/data/pfm/licenses
@@ -126,7 +129,6 @@ on boot
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
-
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
     setprop net.tcp.2g_init_rwnd 10
@@ -182,7 +184,6 @@ on boot
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
 
-
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
@@ -213,7 +214,6 @@ on post-fs-data
 
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
-
 
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
@@ -270,9 +270,6 @@ on post-fs-data
     chown system system /sys/devices/platform/msm_sdcc.3/polling
     chown system system /sys/devices/platform/msm_sdcc.4/polling
 
-    #Create the symlink to qcn wpa_supplicant folder for ar6000 wpa_supplicant
-    #symlink /data/misc/wifi/wpa_supplicant /data/system/wpa_supplicant
-
     #Create directories for Location services
     mkdir /data/vendor/location 0770 gps gps
     mkdir /data/vendor/location/mq 0770 gps gps
@@ -289,9 +286,6 @@ on post-fs-data
     mkdir /data/vendor/time/ 0700 system system
 
     setprop vold.post_fs_data_done 1
-
-    #Create a folder for SRS to be able to create a usercfg file
-    #mkdir /data/data/media 0770 media media
 
     #Create FM dir for patchdownloader
     mkdir /data/vendor/fm 0770 system system
@@ -463,14 +457,6 @@ service qmiproxy /system/bin/qmiproxy
     group radio diag
     disabled
 
-# Adjust socket buffer to enlarge TCP receive window for high bandwidth
-# but only if ro.data.large_tcp_window_size property is set.
-#on property:ro.data.large_tcp_window_size=true
-#    write /proc/sys/net/ipv4/tcp_adv_win_scale  2
-
-#on property:sys.sysctl.tcp_adv_win_scale=*
-#    write /proc/sys/net/ipv4/tcp_adv_win_scale ${sys.sysctl.tcp_adv_win_scale}
-
 service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant \
     -iwigig0 -Dnl80211 -c/data/vendor/wifi/wigig_supplicant.conf \
     -m/data/vendor/wifi/wigig_p2p_supplicant.conf \
@@ -595,12 +581,6 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
     disabled
     oneshot
 
-#service ssgqmigd /vendor/bin/ssgqmigd
-#    class late_start
-#    user radio
-#    group radio gps system
-#    socket ssgqmig seqpacket 0660 radio inet
-
 service mlid /vendor/bin/mlid
     class late_start
     user gps
@@ -617,11 +597,6 @@ service qcom-sh /vendor/bin/init.qcom.sh
     user root
     group root system radio
     oneshot
-# Remove since is deprecated but throws AVC denial.
-# service crashdata-sh /vendor/bin/init.qcom.crashdata.sh
-#    class late_start
-#    user root
-#    oneshot
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
@@ -665,14 +640,6 @@ service hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/glob
     group wifi
     disabled
     oneshot
-
-# service ims_regmanager /system/vendor/bin/exe-ims-regmanagerprocessnative
-#     class late_start
-#     group net_bt_admin inet radio wifi
-#     disabled
-#
-# on property:persist.ims.regmanager.mode=1
-#     start ims_regmanager
 
 on property:ro.data.large_tcp_window_size=true
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)
@@ -734,8 +701,10 @@ service qlogd /system/xbin/qlogd
     socket qlogd stream 0662 system system
     class main
     disabled
+
 on property:persist.sys.qlogd=1
     start qlogd
+
 on property:persist.sys.qlogd=0
     stop qlogd
 
@@ -830,16 +799,6 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
      group system
      capabilities SYS_NICE
      disabled
-
-#service chre /vendor/bin/chre
-#    class late_start
-#    user system
-#    group system
-#    socket chre seqpacket 0660 root system
-#    shutdown critical
-
-on property:vendor.chre.enabled=0
-   stop chre
 
 service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
     class main
