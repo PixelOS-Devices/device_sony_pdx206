@@ -34,7 +34,7 @@
     </hal>
     <hal format="hidl">
        <name>vendor.semc.hardware.display</name>
-       <version>2.2</version>
+       <version>2.2-4</version>
        <interface>
             <name>IDisplay</name>
             <instance>default</instance>
