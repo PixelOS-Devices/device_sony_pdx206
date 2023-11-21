@@ -122,6 +122,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Camera
+$(call inherit-product-if-exists, vendor/sony/pdx206-camera/sonycamera.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
