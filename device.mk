@@ -372,7 +372,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPApertureResTarget \
     AOSPFrameworksResTarget \
     AOSPSettingsResTarget \
     CarrierConfigResTarget \
@@ -383,6 +382,11 @@ PRODUCT_PACKAGES += \
     SystemUIResTarget \
     TelephonyResTarget \
     WifiResTarget
+
+ifeq ("$(wildcard vendor/sony/pdx206-camera)", "")
+PRODUCT_PACKAGES += \
+    AOSPApertureResTarget
+endif
 
 # Power
 PRODUCT_PACKAGES += \
