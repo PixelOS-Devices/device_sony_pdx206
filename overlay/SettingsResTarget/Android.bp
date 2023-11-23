@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "SettingsResTarget",
-    device_specific: true,
+    product_specific: true,
 }
