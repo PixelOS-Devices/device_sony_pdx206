@@ -301,9 +301,6 @@ on boot
     chown system system /sys/devices/virtual/water_detection/wdet/wdet_polling_restart
     chmod 0660 /sys/devices/virtual/water_detection/wdet/wdet_polling_restart
 
-    # Camera
-    write /dev/cpuset/camera-daemon/cpus 0-7
-
     # Memory
     write /proc/sys/vm/dirty_ratio 5
     write /proc/sys/vm/dirty_background_ratio 1
