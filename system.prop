@@ -45,8 +45,5 @@ persist.vendor.qti.inputopts.movetouchslop=0.6
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Vendor
 ro.vendor.qti.va_aosp.support=1
