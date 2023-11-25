@@ -35,7 +35,7 @@ on init
     # SONY: Enable wakeup irq module
     write /sys/devices/platform/wakeup_debug.0/enable 1
 
-on charger
+on property:init.svc.vendor.charger=running
     # power_supply sysfs
     chmod 0664 /sys/class/power_supply/battery/charging_enabled
     chmod 0664 /sys/class/power_supply/battery_ext/lrc_socmax
