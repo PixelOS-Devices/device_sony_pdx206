@@ -17,6 +17,13 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Extras
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_YOUTUBE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
 PRODUCT_NAME := aosp_pdx206
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
