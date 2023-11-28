@@ -58,7 +58,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     liba2dpoffload \
     libbatterylistener \
-    libcirrusspkrprot \
     libcomprcapture \
     libexthwplugin \
     libhdmiedid \
