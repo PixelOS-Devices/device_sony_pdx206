@@ -54,8 +54,6 @@ on property:init.svc.vendor.charger=running
     chmod 0664 /sys/class/power_supply/dc/chg_pwr_dc_icl
     chmod 0664 /sys/class/power_supply/dc/uevent
     chmod 0664 /sys/class/power_supply/usb/uevent
-    chmod 0664 /sys/class/power_supply/wireless/uevent
-    chmod 0664 /sys/class/power_supply/wireless/wlc_vout_set
 
     # usbpd sysfs
     chmod 0664 /sys/class/usbpd/usbpd0/select_pdo
@@ -184,8 +182,6 @@ on post-fs-data
     chmod 0664 /sys/class/power_supply/dc/chg_pwr_dc_icl
     chmod 0664 /sys/class/power_supply/dc/uevent
     chmod 0664 /sys/class/power_supply/usb/uevent
-    chmod 0664 /sys/class/power_supply/wireless/uevent
-    chmod 0664 /sys/class/power_supply/wireless/wlc_vout_set
 
     # usbpd sysfs
     chmod 0664 /sys/class/usbpd/usbpd0/select_pdo
@@ -388,12 +384,6 @@ on property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1
 
 on property:vendor.enable.always_on_display=1 && property:vendor.backlight_on=1
     write /sys/devices/virtual/sec/tsp/cmd "set_lowpower_mode,1"
-
-on property:dev.bootcomplete=1 && property:vendor.wireless_charging=1
-    write /sys/devices/virtual/sec/tsp/cmd "wireless_charging,1"
-
-on property:dev.bootcomplete=1 && property:vendor.wireless_charging=0
-    write /sys/devices/virtual/sec/tsp/cmd "wireless_charging,0"
 
 # Display
 on property:persist.vendor.display.opec_mode=0 && property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1

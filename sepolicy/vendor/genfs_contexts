@@ -1,4 +1,3 @@
-genfscon sysfs /devices/platform/soc/98c000.i2c/i2c-2/2-003b/power_supply/wireless u:object_r:sysfs_wireless_supply:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-08/c440000.qcom,spmi:qcom,pmxprairie@8:qcom,power-on@800/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/battery_ext/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/9800000.qcom,npu/wakeup/wakeup u:object_r:sysfs_wakeup:s0
@@ -27,7 +26,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-npu/wakeup/wakeup           
 genfscon sysfs /devices/platform/soc/98c000.i2c/i2c-2/2-003b/wakeup/wakeup          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1.sony,camera_modules/wakeup/wakeup            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c10000.qcom,pcie/pci0002:00/0002:00:00.0/0002:01:00.0/0306_02.01.00_EFS/wakeup/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/98c000.i2c/i2c-2/2-003b/power_supply/wireless/wakeup                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c00000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/1101_00.01.00/wakeup/wakeup     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm8150l@4:qcom,power-on@800/wakeup/wakeup                                                     u:object_r:sysfs_wakeup:s0
 

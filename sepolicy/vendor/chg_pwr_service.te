@@ -14,5 +14,3 @@ allow chg_pwr_service vendor_sysfs_usbpd_device:dir { search };
 allow chg_pwr_service vendor_sysfs_usbpd_device:file rw_file_perms;
 allow chg_pwr_service vendor_sysfs_usb_supply:dir { search };
 allow chg_pwr_service vendor_sysfs_usb_supply:file rw_file_perms;
-allow chg_pwr_service sysfs_wireless_supply:dir { search };
-allow chg_pwr_service sysfs_wireless_supply:file rw_file_perms;
