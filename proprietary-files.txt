@@ -1678,18 +1678,12 @@ vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libmulawdec.so
 
 # Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib64/libmmosal.so
-vendor/etc/system_properties.xml
-vendor/lib/libmmosal.so
-vendor/lib64/libmmosal.so
-
-# Media (Qcom Codec)
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
+vendor/etc/system_properties.xml
+vendor/lib/libmmosal.so
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
@@ -1698,12 +1692,7 @@ vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib/libstagefright_hdcp.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libqcodec2_base.so
-vendor/lib64/libqcodec2_basecodec.so
-vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_utils.so
-vendor/lib64/libqcodec2_v4l2codec.so
+vendor/lib64/libmmosal.so
 vendor/lib64/libstagefright_hdcp.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 
@@ -1862,12 +1851,9 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 system_ext/app/QtiTelephony/QtiTelephony.apk
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
-system_ext/app/embms/embms.apk
 system_ext/etc/permissions/com.qualcomm.location.xml
 system_ext/etc/permissions/com.qualcomm.qti.izattools.xml
-system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
-system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/app/IWlanService/IWlanService.apk
