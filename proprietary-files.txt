@@ -186,7 +186,6 @@ vendor/firmware/CAMERA_ICP.elf
 
 # Camera libs
 vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service
-vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/camera/CHI08BS1/bokeh_comp.dat
 vendor/camera/CHI08BS1/color_ctrl.dat
 vendor/camera/CHI08BS1/dataflow.dat
@@ -794,7 +793,6 @@ vendor/camera/supported.dat
 vendor/camera/version.dat
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
 vendor/etc/init/vendor.somc.hardware.camera.provider@1.0-service.rc
 vendor/lib/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib/camera/components/com.qti.eisv2.so
@@ -1130,8 +1128,6 @@ vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/local_libcamera_metadata.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
-vendor/lib64/vendor.qti.qspmhal@1.0.so
 vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so
 vendor/lib64/vendor.somc.camera.device@3.2-impl.so
 vendor/lib64/vendor.somc.camera.device@3.3-impl.so
@@ -1925,7 +1921,6 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/etc/seccomp_policy/imsrtp.policy
 vendor/etc/seccomp_policy/mediacodec.policy
-vendor/etc/seccomp_policy/qspm.policy
 vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
