@@ -58,8 +58,6 @@ system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 # Audio Extensions
 vendor/lib/libhdmipassthru.so
 vendor/lib/libsonydseehxwrapper.so
-vendor/lib64/libhdmipassthru.so
-vendor/lib64/libsonydseehxwrapper.so
 
 # Audio
 system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
@@ -73,14 +71,6 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libqtigef.so
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudioparsers.so
-vendor/lib64/libqtigef.so
 
 # Audio Firmware
 vendor/firmware/L-cs35l41-dsp1-spk-cali.bin
@@ -120,25 +110,6 @@ vendor/lib/libsymphony-cpu.so
 vendor/lib/libvpt3d.so
 vendor/lib/libznr.so
 vendor/lib/vendor.dolby.hardware.dms@1.0.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/libHpEqApi.so
-vendor/lib64/libOARenderer.so
-vendor/lib64/libSForceVSE.so
-vendor/lib64/libaudiokeymgr.so
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libiVptApi.so
-vendor/lib64/libiVptHkiDec.so
-vendor/lib64/libiVptLibC.so
-vendor/lib64/libops.so
-vendor/lib64/librebuffering.so
-vendor/lib64/libsony3daudioeffect.so
-vendor/lib64/libvpt3d.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 
 # Audio Sony Effect
 vendor/etc/zoom_noise_reduction/znr_44k_ComboCam.tbl
