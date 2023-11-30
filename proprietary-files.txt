@@ -2318,14 +2318,6 @@ vendor/lib64/vendor.semc.hardware.thermal@1.0.so
 # Touchscreen firmware
 vendor/firmware/touch_module_id_0x94.img
 
-# Trusted User Interface
-system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so
-system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
-
 # VPP
 vendor/bin/vppservice
 vendor/etc/init/vppservice.rc
