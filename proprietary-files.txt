@@ -2316,12 +2316,8 @@ vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/bin/wvkbd
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libhdcprx_module.so
 vendor/lib/libhdcptx_module.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libwvhidl.so
-vendor/lib/libwvtee.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libhdcprx_module.so
 vendor/lib64/libhdcpsrm.so
