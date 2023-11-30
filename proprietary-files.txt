@@ -1392,15 +1392,12 @@ vendor/lib/libQSEEComAPI.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libSecureUILib.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 
