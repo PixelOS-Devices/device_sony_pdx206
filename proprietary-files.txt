@@ -60,8 +60,6 @@ vendor/lib/libhdmipassthru.so
 vendor/lib/libsonydseehxwrapper.so
 
 # Audio
-system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
-system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
