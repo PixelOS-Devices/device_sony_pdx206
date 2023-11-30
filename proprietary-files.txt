@@ -87,7 +87,6 @@ vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libznrwrapper.so
 vendor/lib/libHpEqApi.so
 vendor/lib/libOARenderer.so
@@ -96,7 +95,6 @@ vendor/lib/libSNPE.so
 vendor/lib/libaudiokeymgr.so
 vendor/lib/libaudiosnpewrapper.so
 vendor/lib/libc++_shared.so
-vendor/lib/libdapparamstorage.so
 vendor/lib/libiVptApi.so
 vendor/lib/libiVptHkiDec.so
 vendor/lib/libiVptLibC.so
@@ -107,7 +105,6 @@ vendor/lib/libsony3daudioeffect.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libvpt3d.so
 vendor/lib/libznr.so
-vendor/lib/vendor.dolby.hardware.dms@1.0.so
 
 # Audio Sony Effect
 vendor/etc/zoom_noise_reduction/znr_44k_ComboCam.tbl

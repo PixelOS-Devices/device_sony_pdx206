@@ -10,7 +10,6 @@
      Modifications are licensed under the License.
 -->
 <Included>
-    <Include href="media_codecs_dolby_audio.xml" />
     <Decoders>
         <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
         <!-- SimpleOMXComponet based software decoder-->
