@@ -844,16 +844,6 @@ vendor/lib/hw/camera.qcom.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libcamerapostproc.so
 vendor/lib/libcammw_util.so
-vendor/lib/libcamxexternalformatutils.so
-vendor/lib/libcamxfacialfeatures.so
-vendor/lib/libcamxfdalgo.so
-vendor/lib/libcamxfdengine.so
-vendor/lib/libcamxifestriping.so
-vendor/lib/libcamximageformatutils.so
-vendor/lib/libcamxncs.so
-vendor/lib/libcamxstatscore.so
-vendor/lib/libcamxswprocessalgo.so
-vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libofflinelog.so
@@ -1008,16 +998,6 @@ vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcammw.so
 vendor/lib64/libcammw_util.so
-vendor/lib64/libcamxexternalformatutils.so
-vendor/lib64/libcamxfacialfeatures.so
-vendor/lib64/libcamxfdalgo.so
-vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
-vendor/lib64/libcamxncs.so
-vendor/lib64/libcamxstatscore.so
-vendor/lib64/libcamxswprocessalgo.so
-vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
@@ -1094,6 +1074,28 @@ vendor/lib64/vendor.somc.camera.device@3.2-impl.so
 vendor/lib64/vendor.somc.camera.device@3.3-impl.so
 vendor/lib64/vendor.somc.camera.device@3.4-impl.so
 vendor/lib64/vendor.somc.camera.device@3.5-impl.so
+
+# Camera (camerax)
+vendor/lib/libcamxexternalformatutils.so
+vendor/lib/libcamxfacialfeatures.so
+vendor/lib/libcamxfdalgo.so
+vendor/lib/libcamxfdengine.so
+vendor/lib/libcamxifestriping.so
+vendor/lib/libcamximageformatutils.so
+vendor/lib/libcamxncs.so
+vendor/lib/libcamxstatscore.so
+vendor/lib/libcamxswprocessalgo.so
+vendor/lib/libcamxtintlessalgo.so
+vendor/lib64/libcamxexternalformatutils.so
+vendor/lib64/libcamxfacialfeatures.so
+vendor/lib64/libcamxfdalgo.so
+vendor/lib64/libcamxfdengine.so
+vendor/lib64/libcamxifestriping.so
+vendor/lib64/libcamximageformatutils.so
+vendor/lib64/libcamxncs.so
+vendor/lib64/libcamxstatscore.so
+vendor/lib64/libcamxswprocessalgo.so
+vendor/lib64/libcamxtintlessalgo.so
 
 # Camera postprocessing
 vendor/lib/libscveCommon.so
