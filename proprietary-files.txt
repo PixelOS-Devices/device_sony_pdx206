@@ -1497,10 +1497,6 @@ vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
 vendor/bin/keymasterd
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 vendor/etc/init/keymasterd.rc
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
 vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_listener.so
