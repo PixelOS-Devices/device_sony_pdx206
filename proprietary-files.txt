@@ -1809,31 +1809,16 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib/vendor.qti.data.slm@1.0.so
 
 # SECD
-lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.0.so
-lib64/vendor.somc.hardware.miscta@1.0.so:vendor/lib64/vendor.somc.hardware.miscta@1.0.so
-system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
-system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/hw/vendor.semc.hardware.secd@1.1-service
-vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
-vendor/etc/init/init.taqmi.rc
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/etc/init/vendor.semc.hardware.secd@1.1-service.rc
-vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
 vendor/lib/libdevice_security_vendor.so
-vendor/lib/libmiscta.so
 vendor/lib/libsuntory.so
-vendor/lib/vendor.qti.hardware.soter@1.0.so
 vendor/lib/vendor.somc.hardware.security.secd@1.1.so
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/libdevice_security_vendor.so
-vendor/lib64/libmiscta.so
 vendor/lib64/libsuntory.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
-vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 vendor/lib64/vendor.somc.hardware.security.secd@1.1.so
 
-# SECD firmware
+# SECD (firmware)
 vendor/firmware/tzsecuredata.b00
 vendor/firmware/tzsecuredata.b01
 vendor/firmware/tzsecuredata.b02
@@ -1861,6 +1846,24 @@ vendor/firmware/tztpm.b05
 vendor/firmware/tztpm.b06
 vendor/firmware/tztpm.b07
 vendor/firmware/tztpm.mdt
+
+# SECD (MiscTA)
+lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.0.so
+lib64/vendor.somc.hardware.miscta@1.0.so:vendor/lib64/vendor.somc.hardware.miscta@1.0.so
+system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
+system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
+vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
+vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
+vendor/lib/libmiscta.so
+vendor/lib64/libmiscta.so
+vendor/lib64/vendor.somc.hardware.miscta@1.0.so
+
+# SECD (Soter)
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
+vendor/lib/vendor.qti.hardware.soter@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # SIM control
 odm/bin/sony_ext_uim_ctrl
@@ -1977,6 +1980,7 @@ vendor/bin/tad
 
 # TA QMI
 vendor/bin/ta_qmi_service
+vendor/etc/init/init.taqmi.rc
 -vendor/lib/libta.so
 -vendor/lib64/libta.so
 
