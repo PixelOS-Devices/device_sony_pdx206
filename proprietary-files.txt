@@ -48,8 +48,6 @@ vendor/lib/rfsa/adsp/libsomc_donutscmnserv_skel.so
 vendor/lib/rfsa/adsp/libsomc_milkyrollserv_skel.so
 vendor/lib/rfsa/adsp/libsomc_pdnserv_skel.so
 vendor/lib/rfsa/adsp/libstdc++.so
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # ANT+
 system_ext/lib/com.qualcomm.qti.ant@1.0.so
