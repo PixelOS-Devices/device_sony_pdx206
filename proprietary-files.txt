@@ -53,11 +53,13 @@ vendor/lib/rfsa/adsp/libstdc++.so
 system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 
-# Audio Extensions
-vendor/lib/libhdmipassthru.so
-vendor/lib/libsonydseehxwrapper.so
-
 # Audio
+system_ext/etc/permissions/audiosphere.xml
+system_ext/framework/audiosphere.jar
+vendor/lib/libHpEqApi.so
+vendor/lib/libOARenderer.so
+vendor/lib/libSForceVSE.so
+vendor/lib/libSNPE.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
@@ -65,8 +67,23 @@ vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioalsa.so
+vendor/lib/libaudiokeymgr.so
 vendor/lib/libaudioparsers.so
+vendor/lib/libaudiosnpewrapper.so
+vendor/lib/libc++_shared.so
+vendor/lib/libhdmipassthru.so
+vendor/lib/libiVptApi.so
+vendor/lib/libiVptHkiDec.so
+vendor/lib/libiVptLibC.so
+vendor/lib/libops.so
 vendor/lib/libqtigef.so
+vendor/lib/librebuffering.so
+vendor/lib/libsnpe_dsp_domains_v2.so
+vendor/lib/libsony3daudioeffect.so
+vendor/lib/libsonydseehxwrapper.so
+vendor/lib/libsymphony-cpu.so
+vendor/lib/libvpt3d.so
+vendor/lib/libznr.so
 
 # Audio Firmware
 vendor/firmware/L-cs35l41-dsp1-spk-cali.bin
@@ -77,8 +94,6 @@ vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
 vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
 
 # Audio FX Modules
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdnnrwrapper.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -86,23 +101,6 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libznrwrapper.so
-vendor/lib/libHpEqApi.so
-vendor/lib/libOARenderer.so
-vendor/lib/libSForceVSE.so
-vendor/lib/libSNPE.so
-vendor/lib/libaudiokeymgr.so
-vendor/lib/libaudiosnpewrapper.so
-vendor/lib/libc++_shared.so
-vendor/lib/libiVptApi.so
-vendor/lib/libiVptHkiDec.so
-vendor/lib/libiVptLibC.so
-vendor/lib/libops.so
-vendor/lib/librebuffering.so
-vendor/lib/libsnpe_dsp_domains_v2.so
-vendor/lib/libsony3daudioeffect.so
-vendor/lib/libsymphony-cpu.so
-vendor/lib/libvpt3d.so
-vendor/lib/libznr.so
 
 # Audio Sony Effect
 vendor/etc/zoom_noise_reduction/znr_44k_ComboCam.tbl
