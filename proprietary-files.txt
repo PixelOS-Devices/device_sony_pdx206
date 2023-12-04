@@ -54,8 +54,6 @@ system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
 vendor/lib/libHpEqApi.so
 vendor/lib/libOARenderer.so
 vendor/lib/libSForceVSE.so
