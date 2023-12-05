@@ -13,7 +13,9 @@ on early-init
         sony_camera \
         tcs3490 \
         flash_led \
-        camera_sync
+        camera_sync \
+        texfat \
+        nxp_pn553_nfc
 
     write /sys/module/msm_rtb/parameters/enable 0
 
@@ -300,6 +302,10 @@ on boot
     # Memory
     write /proc/sys/vm/dirty_ratio 5
     write /proc/sys/vm/dirty_background_ratio 1
+
+    # NFC local data and storage
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/nfc/param 0770 nfc nfc
 
     # USB
     chown root system /config/usb_gadget/g1

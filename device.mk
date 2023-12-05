@@ -168,8 +168,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     fstab.qcom \
-    texfat.rc \
-    init.nfc.rc \
     init.sony.rc \
     init.sony.sh
 
