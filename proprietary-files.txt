@@ -2051,15 +2051,12 @@ vendor/firmware/tzwvcpybuf.mdt
 
 # Wifi
 vendor/bin/cnss-daemon
-vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/bdwlan.e16
 vendor/etc/wifi/bdwlan.e17
 vendor/etc/wifi/bdwlan.elf
 vendor/etc/wifi/icm.conf
-vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/regdb.bin
 vendor/etc/wifi/wifi_txpower.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # WiFi Display (system) - from OnePlus 8 Pro (IN2025_11.F.15)
 system/framework/WfdCommon.jar|da807ef11346e38e3d9058e655b3a565f3e2a32d
