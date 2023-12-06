@@ -39,21 +39,18 @@ class CreatorModeUtils(private val context: Context) : IDisplayCallback.Stub() {
     }
 
     fun initialize() {
-        try {
-            Log.e(TAG, "Creator Mode controller setup")
-    
-            // Check if color enhancement is already enabled or not
-            if (!isEnabled) {
-                semcDisplayService.set_sspp_color_mode(1)
-                colorDisplayManager.setColorMode(3)
-                semcDisplayService.set_color_mode(1)
-            }
-    
-            // Register itself as callback for HIDL
-            semcDisplayService.registerCallback(this)
-            semcDisplayService.setup()
-        } catch (e: Exception) {
+        Log.e(TAG, "Creator Mode controller setup")
+
+        // Check if color enhancement is already enabled or not
+        if (!isEnabled) {
+            semcDisplayService.set_sspp_color_mode(1)
+            colorDisplayManager.setColorMode(3)
+            semcDisplayService.set_color_mode(1)
         }
+
+        // Register itself as callback for HIDL
+        semcDisplayService.registerCallback(this)
+        semcDisplayService.setup()
     }
 
     override fun onWhiteBalanceMatrixChanged(matrix: PccMatrix) {
