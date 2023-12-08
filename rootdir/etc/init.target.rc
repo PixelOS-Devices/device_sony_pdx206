@@ -152,7 +152,6 @@ service vendor.per_proxy /vendor/bin/pm-proxy
 service vendor.mdm_helper /vendor/bin/mdm_helper
     class core
     group system wakelock
-    disabled
 
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
