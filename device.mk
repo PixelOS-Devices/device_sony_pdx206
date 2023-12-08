@@ -142,24 +142,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.semc.hardware.charger@1.0.vendor
 
-# Common init scripts
-PRODUCT_PACKAGES += \
-    init_thermal.sh \
-    init.class_main.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.rc \
-    init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.qti.dcvs.sh \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    ueventd.qcom.rc \
-    fstab.qcom \
-    init.sony.rc \
-    init.sony.sh
-
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -273,6 +255,24 @@ PRODUCT_PACKAGES += \
 # Hotword enrollment
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+
+# Init
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sh \
+    init.qti.dcvs.sh \
+    init.sony.sh \
+    init_thermal.sh
+
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qcom.rc \
+    init.recovery.qcom.rc \
+    init.sony.rc \
+    init.target.rc \
+    ueventd.qcom.rc
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -481,7 +481,9 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
+    android.hardware.usb@1.3-service-qti \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
