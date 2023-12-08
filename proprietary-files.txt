@@ -1015,6 +1015,7 @@ vendor/lib64/libsysmon_cdsp_skel.so
 # Charger
 vendor/bin/hw/vendor.semc.hardware.charger@1.0-service
 vendor/bin/chg-pwr-service
+vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.semc.hardware.charger@1.0-service.rc
 vendor/etc/chg-pwr-service.cfg
 
@@ -1834,6 +1835,7 @@ odm/bin/sony_ext_uim_ctrl
 odm/etc/init/sony_ext_uim_ctrl.rc
 
 # Sensors
+vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
