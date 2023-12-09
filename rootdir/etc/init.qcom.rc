@@ -520,20 +520,6 @@ service profiler_daemon /system/bin/profiler_daemon
     group root
     disabled
 
-service diag_mdlog_start /system/vendor/bin/diag_mdlog
-    class late_start
-    user shell
-    group system oem_2901 sdcard_rw sdcard_r media_rw wakelock
-    disabled
-    oneshot
-
-service diag_mdlog_stop /system/vendor/bin/diag_mdlog -k
-    class late_start
-    user shell
-    group system oem_2901 sdcard_rw sdcard_r media_rw wakelock
-    disabled
-    oneshot
-
 service qlogd /system/xbin/qlogd
     socket qlogd stream 0662 system system
     class main
