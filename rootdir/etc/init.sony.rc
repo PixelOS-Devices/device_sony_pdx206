@@ -32,8 +32,6 @@ on init
     class_start trimarea
     exec u:r:tad:s0 system -- /vendor/bin/wait4tad
 
-    write /proc/sys/vm/swappiness 100
-
     # SONY: Enable wakeup irq module
     write /sys/devices/platform/wakeup_debug.0/enable 1
 
