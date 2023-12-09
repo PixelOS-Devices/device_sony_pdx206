@@ -27,59 +27,19 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-#
-# start qcrild only for targets on which radio is present
-#
-baseband=`getprop ro.baseband`
+multisim=`getprop persist.radio.multisim.config`
 datamode=`getprop persist.vendor.data.mode`
-low_ram=`getprop ro.config.low_ram`
 
-case "$baseband" in
-    "apq" | "sda" | "qcs" )
-    setprop ro.vendor.radio.noril yes
-    stop vendor.qcrild
-esac
+start vendor.qcrild
+if [ "$multisim" = "dsds" ]; then
+    start vendor.qcrild2
+fi
 
-case "$baseband" in
-    "msm" | "csfb" | "svlte2a" | "mdm" | "mdm2" | "sglte" | "sglte2" | "dsda2" | "unknown" | "dsda3" | "sdm" | "sdx" | "sm6")
-
-    start vendor.qcrild
-
-    multisim=`getprop persist.radio.multisim.config`
-
-    if [ "$multisim" = "dsds" ] || [ "$multisim" = "dsda" ]; then
-        start vendor.qcrild2
-    elif [ "$multisim" = "tsts" ]; then
-        start vendor.qcrild2
-        start vendor.qcrild3
-    fi
-
-    case "$datamode" in
-        "tethered")
-            start vendor.dataqti
-            if [ "$low_ram" != "true" ]; then
-              start vendor.dataadpl
-            fi
-            ;;
-        "concurrent")
-            start vendor.dataqti
-            if [ "$low_ram" != "true" ]; then
-              start vendor.dataadpl
-            fi
-            ;;
-        *)
-            ;;
-    esac
-esac
-
-#
-# Allow persistent faking of bms
-# User needs to set fake bms charge in persist.vendor.bms.fake_batt_capacity
-#
-fake_batt_capacity=`getprop persist.vendor.bms.fake_batt_capacity`
-case "$fake_batt_capacity" in
-    "") ;; #Do nothing here
-    * )
-    echo "$fake_batt_capacity" > /sys/class/power_supply/battery/capacity
-    ;;
+case "$datamode" in
+    "tethered" | "concurrent" )
+        start vendor.dataqti
+        start vendor.dataadpl
+        ;;
+    *)
+        ;;
 esac
