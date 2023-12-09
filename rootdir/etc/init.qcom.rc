@@ -438,14 +438,6 @@ service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
 
-# Data Migration
-service vendor.move_wifi_data /system/bin/move_wifi_data.sh
-    class main
-    user  wifi
-    group wifi
-    disabled
-    oneshot
-
 service wigignpt /vendor/bin/wigignpt
     class hal
     socket wigig/wigignpt stream 660 system wifi
