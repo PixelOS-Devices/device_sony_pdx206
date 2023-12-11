@@ -1,7 +1,6 @@
 #!/vendor/bin/sh
 SENSOR_LIST="sdm_modem_skin_sa"
 
-MODEL=$(getprop ro.product.model)
 I=0;
 while true; do
 	if [ ! -d /sys/class/thermal/thermal_zone${I} ]; then
