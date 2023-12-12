@@ -5,18 +5,6 @@
 #
 
 on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ \
-        sec_touchscreen \
-        bu520x1nvx \
-        et580-int \
-        slg51000-regulator \
-        sony_camera \
-        tcs3490 \
-        flash_led \
-        camera_sync \
-        texfat \
-        nxp_pn553_nfc
-
     write /sys/module/msm_rtb/parameters/enable 0
 
 on init

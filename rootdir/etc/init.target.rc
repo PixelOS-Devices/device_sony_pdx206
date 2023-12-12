@@ -31,32 +31,6 @@
 #
 
 on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules \
-        q6_pdr_dlkm \
-        q6_notifier_dlkm \
-        snd_event_dlkm \
-        apr_dlkm \
-        adsp_loader_dlkm \
-        q6_dlkm \
-        native_dlkm \
-        usf_dlkm \
-        pinctrl_wcd_dlkm \
-        pinctrl_lpi_dlkm \
-        swr_dlkm \
-        platform_dlkm \
-        hdmi_dlkm \
-        stub_dlkm \
-        wcd_core_dlkm \
-        wsa881x_dlkm \
-        bolero_cdc_dlkm \
-        wsa_macro_dlkm \
-        va_macro_dlkm \
-        rx_macro_dlkm \
-        tx_macro_dlkm \
-        wcd938x_dlkm \
-        wcd938x_slave_dlkm \
-        machine_dlkm
-
     write /proc/sys/kernel/sched_boost 1
 
 on init
@@ -115,8 +89,6 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop vendor.usb.controller a600000.dwc3
     setprop persist.vendor.mdm_helper.fail_action cold_reset,s3_reset,panic
-    #Load WLAN driver
-    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_wlan country_code=${ro.boot.wificountrycode}
 
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
