@@ -374,7 +374,7 @@ on property:sys.boot_completed=1
     setprop lmkd.reinit 1
 
     # QCOM post boot
-    start qcom-post-boot
+    start vendor.qcom-post-boot
 
     write /dev/kmsg "Boot completed "
 
@@ -454,7 +454,7 @@ service qcom-sh /vendor/bin/init.qcom.sh
     group root system radio
     oneshot
 
-service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
+service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
     user root
     group root system wakelock graphics
@@ -509,7 +509,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/m
 
 on property:init.svc.vendor.charger=running
     setprop persist.sys.usb.config mass_storage
-    start qcom-post-boot
+    start vendor.qcom-post-boot
 
 # Logcat dump daemon, dumps logs to logdump partition
 service logdumpd /system/bin/logcat -b all -v threadtime -D -w /dev/block/bootdevice/by-name/logdump
